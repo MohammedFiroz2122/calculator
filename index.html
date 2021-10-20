@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iphone Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="topcontainer"></div>
+        <input type="text" class="display" id="result">
+        <div class="buttons">
+            <button onclick="clearScreen()" id="ac-btn">AC</button>
+            <button onclick="displayValue(`%`)">%</button>
+            <button onclick="backSpace()">C</button>
+            <button onclick="displayValue(`+/`)">+/-</button>
+        </div>
+        <div class="buttons">
+
+            <button onclick="displayValue(7)">7</button>
+            <button onclick="displayValue(8)">8</button>
+            <button onclick="displayValue(9)">9</button>
+            <button onclick="displayValue(`+`)">+</button>
+        </div>
+        <div class="buttons">
+            <button onclick="displayValue(4)">4</button>
+            <button onclick="displayValue(5)">5</button>
+            <button onclick="displayValue(6)">6</button>
+            <button onclick="displayValue(`-`)">-</button>
+        </div>
+
+        <div class="buttons">
+            <button onclick="displayValue(1)">1</button>
+            <button onclick="displayValue(2)">2</button>
+            <button onclick="displayValue(3)">3</button>
+            <button onclick="displayValue(`*`)">x</button>
+        </div>
+
+        <div class="buttons">
+            <button onclick="displayValue(0)">0</button>
+            <button onclick="displayValue(`.`)">.</button>
+            <button onclick="displayValue(`/`)">/</button>
+            <button onclick="evaluateExpression()"> = </button>
+        </div>
+        
+    </div>
+    
+    
+</body>
+<script src="./script.js"></script>
+</html>
